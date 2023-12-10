@@ -1,0 +1,12 @@
+name = "ens-gateway"
+main = "src/index.ts"
+compatibility_date = "2023-03-15"
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "chaingame-db"
+database_id = "2d3c4055-1cb7-454d-a8fc-c450b39b81fd"
+
+# The necessary secrets are:
+# - PRIVATE_KEY
+# Run `echo <VALUE> | wrangler secret put <NAME>` for each of these

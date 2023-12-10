@@ -1,0 +1,174 @@
+{"abi": [
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "receiver",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "t_index",
+				"type": "uint256"
+			}
+		],
+		"name": "buyToken",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "destinationChainSelector",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string[]",
+				"name": "links",
+				"type": "string[]"
+			},
+			{
+				"internalType": "bool",
+				"name": "onLoop",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "activeTill",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "sig",
+				"type": "bytes"
+			},
+			{
+				"internalType": "enum TokenType",
+				"name": "tokenType",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "interval",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "destinationChainSelector",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "receiver",
+				"type": "address"
+			},
+			{
+				"internalType": "enum TokenType",
+				"name": "tokenType",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "interval",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "onLoop",
+				"type": "bool"
+			},
+			{
+				"internalType": "string[]",
+				"name": "links",
+				"type": "string[]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "duration",
+				"type": "uint256"
+			}
+		],
+		"name": "createToken",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "t_index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "sig",
+				"type": "bytes"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sender",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "currContract",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "currTokenIndex",
+				"type": "uint256"
+			}
+		],
+		"name": "updateToken",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "receiver",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "link",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "destinationChainSelector",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]}
